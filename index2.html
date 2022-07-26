@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+				
+        <div class="col-12 col-md-8">
+          <!--Header-->
+          <div class="row">
+            <div class="col-12 header">
+              <img src="./Vector.png" alt="logo" />
+            </div>
+          </div>
+					<div class="container">
+
+						<!--Input-->
+						<div class="row main-col">
+							<div class="col-12 text-input">
+								<textarea
+                  id="text-area"
+									name="text"
+									cols="30"
+									rows="10"
+									placeholder="Ingrese el texto aquí"
+								></textarea>
+							</div>
+              <div class="col-12">
+                <p class="aviso"><img src="./Vector (1).png" alt="Alert"> Sólo letras minúsculas y sin acentos</p>
+              </div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<button id="encriptar" class="encriptar">Encriptar</button>
+									</div>
+									<div class="col-12 col-md-6">
+										<button class="desencriptar">Desencriptar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <!--Derecha-->
+        <div class="col-12 col-md-4">
+            <div class="derecha">
+              <div id="initial">
+                <img src="./Muñeco (1).png" alt="Muñeco" class="img-derecha">
+                <h1 class="primer-parrafo">Ningún mensaje fue encontrado</h1>
+                <p class="segundo-parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+              <div id="final">
+                <p id="parrafo">
+
+
+
+                </p>
+                <button class="copiar">COPIAR</button>
+              </div>
+          </div>
+				</div>
+      </div>
+    </div>
+
+  </body>
+  <script src="./index.js"></script>
+</html>
