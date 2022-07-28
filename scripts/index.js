@@ -21,7 +21,7 @@ let botonDesencriptar = document.getElementById("desencriptar");
 let textarea = document.getElementById("text-area");
 let parrafo = document.getElementById("parrafo");
 
-let initial = document.getElementById("initial");
+let inicial = document.getElementById("inicial");
 let final = document.getElementById("final");
 
 final.style.display = "none" 
@@ -30,7 +30,7 @@ let botonEncriptar = document.getElementById("encriptar");
 
 botonEncriptar.addEventListener('click',() => {
     parrafo.value = encriptarTexto(textarea.value) 
-    initial.style.display = "none";
+    inicial.style.display = "none";
     final.style.display = "flex";
 })
 
