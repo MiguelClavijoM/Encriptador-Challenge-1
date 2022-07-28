@@ -18,6 +18,7 @@
       <div class="row">
 				
         <div class="col-12 col-md-8">
+         
           <!--Header-->
           <div class="row">
             <div class="col-12 header">
@@ -35,6 +36,7 @@
 									cols="30"
 									rows="10"
 									placeholder="Ingrese el texto aquí"
+                  onkeypress="return soloLetras(event); required"
 								></textarea>
 							</div>
               <div class="col-12">
@@ -46,25 +48,26 @@
 										<button id="encriptar" class="encriptar">Encriptar</button>
 									</div>
 									<div class="col-12 col-md-6">
-										<button class="desencriptar">Desencriptar</button>
+										<button id="desencriptar" class="desencriptar">Desencriptar</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
         </div>
+
         <!--Derecha-->
         <div class="col-12 col-md-4">
             <div class="derecha">
-              <div id="initial">
+              <div id="inicial">
                 <img src="./Muñeco (1).png" alt="Muñeco" class="img-derecha">
                 <h1 class="primer-parrafo">Ningún mensaje fue encontrado</h1>
                 <p class="segundo-parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
               </div>
               <div id="final">
-                <p id="parrafo">
-                </p>
-                <button class="copiar">COPIAR</button>
+                <textarea id="parrafo" readonly>
+                </textarea>
+                <button id="copiar" class="copiar">Copiar</button>
               </div>
           </div>
 				</div>
